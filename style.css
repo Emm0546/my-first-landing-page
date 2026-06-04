@@ -82,6 +82,7 @@
   font-weight: 500;
   width: 100%;
   max-width: 400px;
+  flex-wrap: wrap;
 }
 
 .info-container {
@@ -212,4 +213,23 @@
   align-items: center;
   font-size: 15px;
   font-weight: 500;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  height: 65px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f9fafb;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
