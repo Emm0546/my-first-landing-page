@@ -76,3 +76,50 @@
   border-radius: 12px;
   font-weight: 500;
 }
+
+.info-container {
+  padding: 48px 24px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.info-container h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
+.grid-pond {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  width: 200px; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.card-box {
+  width: 150px;
+  height: 150px;
+  border: 4px solid #38bdf8;
+  border-radius: 16px;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  font-size: 16px;
+  color: #4b5563;
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
