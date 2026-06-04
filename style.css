@@ -47,10 +47,12 @@
 }
 
 .hero-left h1 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 800;
   color: #f9fafb;
   margin: 0 0 8px 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .hero-left p {
@@ -78,11 +80,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  font-weight: 500;
+  text-align: center;
   width: 100%;
   max-width: 400px;
-  flex-wrap: wrap;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-weight: 500;
 }
 
 .info-container {
@@ -178,6 +182,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .cta-text h3 {
