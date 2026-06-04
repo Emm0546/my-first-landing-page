@@ -99,10 +99,10 @@
 }
 
 .info-card {
-  width: 200px; 
+  width: 200px;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-box {
@@ -121,5 +121,33 @@
   line-height: 1.4;
   text-align: center;
 }
+.quote-container {
+  background-color: #e5e7eb;
+  padding: 64px 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.quote-box {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
+.quote-text {
+  font-size: 24px;
+  font-style: italic;
+  color: #1f2937;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.quote-author {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4b5563;
+  text-align: right;
+  margin: 0;
+}
