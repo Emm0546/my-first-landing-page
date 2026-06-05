@@ -14,6 +14,8 @@ You can view the live interactive web deployment here:
 * **Two-Axis Flexbox Coordination**: Implemented explicit horizontal and vertical layout controls using `display: flex`, `justify-content`, and `align-items` to achieve clean, suspended components.
 * **Adaptive Mobile Responsiveness**: Utilized `flex-wrap: wrap` and fluid sizing parameters to ensure the entire multi-column structure safely collapses into a scrollable single-column layout on modern smartphone screens (verified on Android viewports).
 * **Visual Brand Symmetry**: Configured unified high-contrast background sheets (`#1f2937`) on both the top hero ceiling and the bottom footer floor, integrated with an authentic Seventh-day Adventist graphic logo icon.
+* **Bilingual Multi-Page Architecture**: Implemented a complete 8-page synchronized navigation matrix splits evenly between English and French versions (`index`, `about`, `ministries`, `contact`), linked via horizontal language toggle switches.
+
 
 ## 🛠️ Built With
 * **HTML5**: Clean, highly semantic structure tags.
