@@ -243,3 +243,41 @@
 .registration-form {
   display: none;
 }
+.registration-form {
+  display: none;
+  width: 800px;
+  max-width: 100%;
+  margin-top: 24px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #e5e7eb;
+  border-radius: 12px;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.registration-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.registration-form button {
+  background-color: #1f2937;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.registration-message {
+  margin: 16px 0 0 0;
+  color: #1f2937;
+  font-weight: 700;
+}

@@ -40,14 +40,18 @@ heroButton.addEventListener("click", () => {
 
 const registerButton = document.querySelector(".cta-btn");
 const registrationForm = document.querySelector(".registration-form");
+const registrationMessage = document.querySelector(".registration-message");
 
 registerButton.addEventListener("click", () => {
   registrationForm.style.display = "block";
 });
+
 registrationForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const name = document.querySelector(".name-input").value;
 
-  alert(`Thank you for registering, ${name}!`);
+  registrationMessage.textContent = `Thank you for registering, ${name}!`;
+
+  registrationForm.style.display = "none";
 });
