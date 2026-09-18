@@ -1,9 +1,39 @@
-const banner = document.getElementById("welcome-banner");
-if (banner) {
-    banner.textContent = "🕊️ Bienvenue à l'Église De La Rue Des Jardins 🕊️";
-    banner.style.background = "#1a252f";
-    banner.style.color = "#ffffff";
-    banner.style.padding = "12px";
-    banner.style.textAlign = "center";
-    banner.style.fontSize = "15px";
-}
+const welcomeBanner = document.querySelector("#welcome-banner");
+
+const messages = [
+  "Welcome to Rue Des Jardins!",
+  "Join us this Saturday for worship and fellowship.",
+  "You are always welcome in our church family.",
+];
+
+let currentMessage = 0;
+
+welcomeBanner.textContent = messages[currentMessage];
+
+welcomeBanner.style.backgroundColor = "#1f2937";
+welcomeBanner.style.color = "#ffffff";
+welcomeBanner.style.padding = "16px";
+welcomeBanner.style.textAlign = "center";
+welcomeBanner.style.fontSize = "18px";
+welcomeBanner.style.fontWeight = "bold";
+
+setInterval(() => {
+  currentMessage++;
+
+  if (currentMessage >= messages.length) {
+    currentMessage = 0;
+  }
+
+  welcomeBanner.textContent = messages[currentMessage];
+}, 4000);
+
+const heroButton = document.querySelector(".hero-btn");
+heroButton.addEventListener("click", () => {
+  alert("We'd love to see you this Saturday!");
+});
+
+heroButton.addEventListener("click", () => {
+  document.querySelector("#service-info").scrollIntoView({
+    behavior: "smooth",
+  });
+});
