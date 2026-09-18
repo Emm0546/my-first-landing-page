@@ -37,3 +37,17 @@ heroButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const registerButton = document.querySelector(".cta-btn");
+const registrationForm = document.querySelector(".registration-form");
+
+registerButton.addEventListener("click", () => {
+  registrationForm.style.display = "block";
+});
+registrationForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const name = document.querySelector(".name-input").value;
+
+  alert(`Thank you for registering, ${name}!`);
+});
