@@ -59,7 +59,10 @@ registrationForm.addEventListener("submit", (event) => {
 
   const name = document.querySelector(".name-input").value;
 
-  registrationMessage.textContent = `Thank you for registering, ${name}!`;
+  registrationMessage.textContent =
+  language === "fr"
+    ? `Merci pour votre inscription, ${name} !`
+    : `Thank you for registering, ${name}!`;
 
   registrationForm.style.display = "none";
 });
