@@ -1,10 +1,18 @@
+const language = document.documentElement.lang;
 const welcomeBanner = document.querySelector("#welcome-banner");
 
-const messages = [
-  "Welcome to Rue Des Jardins!",
-  "Join us this Saturday for worship and fellowship.",
-  "You are always welcome in our church family.",
-];
+const messages =
+  language === "fr"
+    ? [
+        "Bienvenue à Rue Des Jardins !",
+        "Rejoignez-nous ce samedi pour le culte et la communion fraternelle.",
+        "Vous êtes toujours les bienvenus dans notre famille d'église.",
+      ]
+    : [
+        "Welcome to Rue Des Jardins!",
+        "Join us this Saturday for worship and fellowship.",
+        "You are always welcome in our church family.",
+      ];
 
 let currentMessage = 0;
 

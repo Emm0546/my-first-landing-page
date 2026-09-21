@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="FR">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L'Église De La Rue Des Jardins</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  
 
   <body>
     <!-- ==================== SECTION 1: DARK HERO CONTAINER ==================== -->
+    <div id="welcome-banner"></div>
+
     <div class="hero-container">
       <div class="header">
         <div class="logo">
@@ -46,7 +47,7 @@
     </div>
 
     <!-- ==================== SECTION 2: INFORMATION GRID CONTAINER ==================== -->
-    <div class="info-container">
+    <div class="info-container" id="service-info">
       <h2>Nos Piliers Centraux</h2>
       <div class="grid-pond">
         <div class="info-card">
@@ -99,7 +100,29 @@
       </div>
     </div>
 
+
+  <form class="registration-form">
+    <input
+      type="text"
+      class="name-input"
+      placeholder="Votre nom"
+      required
+    />
+
+    <input
+      type="email"
+      class="email-input"
+      placeholder="Votre adresse e-mail"
+      required
+    />
+
+    <button type="submit">Envoyer l'inscription</button>
+
+    <p class="registration-message"></p>
+  </form>
+</div>
     <!-- ==================== FINAL FLOOR: FOOTER CONTAINER ==================== -->
     <div class="footer">Copyright © L'Église De La Rue Des Jardins 2026</div>
+    <script src="script.js"></script>
   </body>
 </html>
