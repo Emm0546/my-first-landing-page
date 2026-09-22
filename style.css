@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .hero-container {
   background-color: #1f2937;
   padding: 16px 48px 48px 48px;
