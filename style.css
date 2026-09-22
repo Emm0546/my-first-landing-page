@@ -401,3 +401,8 @@ body {
     padding-right: 24px;
   }
 }
+.lang-switch {
+  border-left: 1px solid #6b7280;
+  padding-left: 16px;
+  margin-left: 0;
+}
