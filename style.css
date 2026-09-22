@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .hero-container {
   background-color: #1f2937;
   padding: 16px 48px 48px 48px;
@@ -359,4 +363,29 @@
   color: #38bdf8;
   font-weight: bold;
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 16px 24px 48px 24px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .image-placeholder {
+    margin: 0 auto;
+  }
+
+  .quote-container,
+  .cta-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
