@@ -168,12 +168,8 @@
   padding: 48px;
   background-color: #ffffff;
   display: flex;
-
-  align-items: center;
-  display: flex;
   align-items: center;
   gap: 24px;
-
   width: 100%;
   flex-direction: column;
 }
@@ -231,6 +227,9 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #f9fafb;
 }
 
 .logo-icon {
@@ -245,9 +244,7 @@
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
-.registration-form {
-  display: none;
-}
+
 .registration-form {
   display: none;
   width: 400px;
@@ -353,4 +350,13 @@
 .contact-message {
   margin: 0;
   font-weight: bold;
+}
+.page-header {
+  min-height: auto;
+  padding-bottom: 24px;
+}
+.home-link {
+  color: #38bdf8;
+  font-weight: bold;
+  text-decoration: none;
 }
