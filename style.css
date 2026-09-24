@@ -200,6 +200,8 @@ body {
   border: 2px solid #1f2937;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .footer {
@@ -220,6 +222,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #f9fafb;
+  text-decoration: none;
 }
 
 .logo-icon {
@@ -366,15 +369,24 @@ body {
     padding-right: 24px;
   }
 }
-@media (max-width: 768px) {
-  .cta-container {
-    width: 100%;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
+
 .lang-switch {
   border-left: 1px solid #6b7280;
   padding-left: 16px;
   margin-left: 0;
+}
+.nav-links a.active {
+  color: #38bdf8;
+  font-weight: 700;
+}
+.service-times {
+  background-color: #f1f5f9;
+}
+
+.service-times .pillar-card {
+  background-color: #ffffff;
+}
+#next-service {
+  color: #38bdf8;
+  font-weight: 700;
 }

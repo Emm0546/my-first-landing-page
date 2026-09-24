@@ -41,13 +41,9 @@ const heroButton = document.querySelector(".hero-btn");
 
 if (heroButton) {
   heroButton.addEventListener("click", () => {
-    alert("We'd love to see you this Saturday!");
-  });
-
-  heroButton.addEventListener("click", () => {
-    document.querySelector("#service-info").scrollIntoView({
-      behavior: "smooth",
-    });
+    document
+      .querySelector("#service-info")
+      .scrollIntoView({ behavior: "smooth" });
   });
 }
 
@@ -57,7 +53,7 @@ const registrationMessage = document.querySelector(".registration-message");
 
 if (registerButton && registrationForm) {
   registerButton.addEventListener("click", () => {
-    registrationForm.style.display = "block";
+    registrationForm.style.display = "flex";
   });
 
   registrationForm.addEventListener("submit", (event) => {
@@ -89,4 +85,51 @@ if (contactForm) {
 
     contactForm.reset();
   });
+}
+const currentPage = location.pathname.split("/").pop() || "index.html";
+
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active");
+  }
+});
+const nextServiceElement = document.querySelector("#next-service");
+
+if (nextServiceElement) {
+  const today = new Date().getDay(); // 0 = Sunday, 1 = Monday ... 6 = Saturday
+  let message;
+
+  if (today === 6) {
+    message =
+      language === "fr"
+        ? "Culte aujourd'hui : à partir de 8h00"
+        : "Service today: from 8:00 AM";
+  } else if (today === 5) {
+    message =
+      language === "fr"
+        ? "Culte aujourd'hui : 19h00"
+        : "Service today: 7:00 PM";
+  } else if (today === 4) {
+    message =
+      language === "fr"
+        ? "Prochain culte : demain vendredi à 19h00"
+        : "Next service: tomorrow, Friday at 7:00 PM";
+  } else if (today === 3) {
+    message =
+      language === "fr"
+        ? "Culte aujourd'hui : 18h00"
+        : "Service today: 6:00 PM";
+  } else if (today === 2) {
+    message =
+      language === "fr"
+        ? "Prochain culte : demain mercredi à 18h00"
+        : "Next service: tomorrow, Wednesday at 6:00 PM";
+  } else {
+    message =
+      language === "fr"
+        ? "Prochain culte : mercredi à 18h00"
+        : "Next service: Wednesday at 6:00 PM";
+  }
+
+  nextServiceElement.textContent = message;
 }
